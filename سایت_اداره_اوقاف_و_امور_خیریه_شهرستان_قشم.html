@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>اداره اوقاف و امور خیریه شهرستان قشم</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf6;--ink:#14213d;--navy:#0f1f3d;--gold:#b8975a;--card:#fff;--line:#e6e1d3;--mut:#5b6478;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1428;--ink:#eee9dc;--card:#13203d;--line:#27375c;--mut:#a3adc4}}
+:root[data-theme="dark"]{--bg:#0b1428;--ink:#eee9dc;--card:#13203d;--line:#27375c;--mut:#a3adc4}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.9 Vazirmatn,Tahoma,sans-serif}
+h1,h2,h3{line-height:1.5;margin:0}a{color:inherit}
+.w{max-width:1080px;margin:auto;padding:0 18px}
+header.top{background:var(--navy);color:#fff;border-bottom:3px solid var(--gold)}
+header.top .w{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.brand{font-weight:800;font-size:15px}
+.btn{font:600 14px Vazirmatn,Tahoma,sans-serif;border:1px solid var(--gold);background:var(--gold);color:#14213d;padding:8px 16px;border-radius:6px;cursor:pointer}
+.btn.o{background:transparent;color:inherit}.btn.s{padding:4px 10px;font-size:13px}.btn.d{border-color:#b3412f;background:#b3412f;color:#fff}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:56px 0 64px}
+.hero svg.pat{position:absolute;inset:0;width:100%;height:100%;opacity:.14}
+.hero .w{position:relative}
+.hero h1{font-size:clamp(26px,5vw,44px);font-weight:800;max-width:14em}
+.hero p{max-width:34em;color:#d8dcea;margin:14px 0 22px}
+.hero .row{display:flex;gap:10px;flex-wrap:wrap}
+section.s{padding:42px 0}section.s h2{font-size:24px;margin-bottom:6px}.sub{color:var(--mut);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.card .im{height:150px;background:var(--navy) center/cover;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:40px}
+.card .b{padding:14px}.card h3{font-size:17px}.meta{font-size:13px;color:var(--mut)}
+.chip{display:inline-block;font-size:12px;border:1px solid var(--gold);color:var(--gold);border-radius:20px;padding:0 10px;margin-inline-end:6px}
+.chief{display:grid;grid-template-columns:200px 1fr;gap:26px;align-items:start}
+.chief .ph{aspect-ratio:3/4;background:var(--navy) center/cover;border-bottom:4px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:56px;border-radius:4px}
+@media(max-width:640px){.chief{grid-template-columns:1fr}.chief .ph{max-width:200px}}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.bar .btn{background:transparent;color:var(--ink);border-color:var(--line)}.bar .btn.on{background:var(--gold);color:#14213d;border-color:var(--gold)}
+label{display:block;font-size:14px;font-weight:600;margin:10px 0 2px}
+input,select,textarea{width:100%;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:640px){.two{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px;margin-bottom:18px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:18px}
+.stats div{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);padding:10px 14px;border-radius:6px}.stats b{font-size:26px;display:block}
+.li{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line)}
+.note{background:rgba(184,151,90,.15);border:1px solid var(--gold);border-radius:6px;padding:8px 12px;font-size:14px;margin-bottom:16px}
+.hide{display:none}.tbl{overflow-x:auto}
+footer{background:var(--navy);color:#cfd5e6;padding:26px 0;margin-top:30px;font-size:14px}
+dialog{max-width:640px;width:92%;border:1px solid var(--gold);border-radius:8px;background:var(--card);color:var(--ink);padding:20px}
+dialog img{max-width:100%;border-radius:6px;margin:6px 0}
+</style></head><body>
+<header class="top"><div class="w"><div class="brand">اداره اوقاف و امور خیریه شهرستان قشم</div>
+<nav class="row" style="display:flex;gap:8px"><button class="btn o s" onclick="go('home')">صفحه اصلی</button><button class="btn s" onclick="go('citizen')">ورود شهروندان</button><button class="btn o s" onclick="go('admin')">ورود مدیر سامانه</button></nav></div></header>
+
+<main id="v-home">
+<div class="hero"><svg class="pat" aria-hidden="true"><defs><pattern id="st" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M40 6l9 22 22-9-9 22 22 9-22 9 9 22-22-9-9 22-9-22-22 9 9-22-22-9 22-9-9-22 22 9z" fill="none" stroke="#b8975a" stroke-width="1.2"/></pattern></defs><rect width="100%" height="100%" fill="url(#st)"/></svg>
+<div class="w"><h1>اداره اوقاف و امور خیریه شهرستان قشم</h1><p>صیانت از موقوفات، احیای سنت نیکوی وقف و خدمت‌رسانی به مردم جزیره. اخبار و گزارش فعالیت‌ها را دنبال کنید و درخواست‌های خود را با کد پیگیری ثبت کنید.</p>
+<div class="row"><button class="btn" onclick="go('citizen')">ورود شهروندان</button><button class="btn o" onclick="go('admin')" style="color:#fff">ورود مدیر سامانه</button></div></div></div>
+<section class="s"><div class="w"><h2>رئیس اداره</h2><p class="sub">مشخصات رسمی</p><div class="chief"><div class="ph" id="cph">☪</div><div><h3 id="cname"></h3><div class="meta" id="ctitle"></div><p id="cbio"></p></div></div></div></section>
+<section class="s" style="background:rgba(184,151,90,.08)"><div class="w"><h2>اطلاعیه‌ها و فراخوان‌ها</h2><p class="sub">آخرین اطلاعیه‌های منتشرشده</p><div id="anns"></div></div></section>
+<section class="s"><div class="w"><h2>اخبار و گزارش فعالیت‌ها</h2><p class="sub">جدیدترین گزارش‌ها از فعالیت‌های اداره</p><div class="bar" id="cats"></div><div class="grid" id="news"></div></div></section>
+<section class="s"><div class="w"><h2>موقوفات و امور خیریه</h2><p class="sub">درخواست‌های مربوط به موقوفات و کمک‌های خیریه را از بخش «ورود شهروندان» ثبت و با کد پیگیری کنید.</p></div></section>
+</main>
+
+<main id="v-citizen" class="hide"><section class="s"><div class="w"><h2>درگاه شهروندان</h2><p class="sub">ثبت درخواست، پیشنهاد یا پرسش و پیگیری وضعیت</p>
+<div class="two"><div class="panel"><h3>ثبت درخواست یا پیام</h3><form id="rf"><label>نام و نام خانوادگی</label><input name="n" required><label>شماره همراه</label><input name="p" inputmode="tel" required pattern="09[0-9]{9}" title="مثال: 09120000000"><label>نوع</label><select name="t"><option>درخواست موقوفات</option><option>درخواست امور خیریه</option><option>پیشنهاد</option><option>پرسش</option></select><label>متن پیام</label><textarea name="m" rows="4" required></textarea><p><button class="btn">ثبت و دریافت کد پیگیری</button></p></form><div id="rcode"></div></div>
+<div class="panel"><h3>پیگیری درخواست</h3><form id="tf"><label>کد پیگیری</label><input name="c" required placeholder="QSM-123456"><p><button class="btn">نمایش وضعیت</button></p></form><div id="tres"></div></div></div>
+<div class="panel"><h3>اطلاعات تماس</h3><div id="contact"></div></div></div></section></main>
+
+<main id="v-admin" class="hide"><section class="s"><div class="w">
+<div id="login" class="panel" style="max-width:420px;margin:auto"><h2>ورود مدیر سامانه</h2><form id="lf"><label>نام کاربری</label><input name="u" autocomplete="username" required><label>رمز عبور</label><input name="p" type="password" autocomplete="current-password" required><p><button class="btn">ورود</button></p><div id="lerr" style="color:#b3412f"></div></form></div>
+<div id="dash" class="hide"><div class="li" style="border:0"><h2>پنل مدیریت</h2><button class="btn o s" onclick="logout()">خروج</button></div><div class="stats" id="stats"></div>
+<div class="bar" id="tabs"></div>
+<div id="t-news"><div class="panel"><h3 id="nft">ثبت خبر یا گزارش</h3><form id="nf"><label>عنوان فعالیت</label><input name="title" required><div class="two"><div><label>تاریخ</label><input name="date" type="date" required></div><div><label>محل برگزاری</label><input name="place"></div></div><div class="two"><div><label>مسئول یا واحد برگزارکننده</label><input name="unit"></div><div><label>دسته‌بندی</label><select name="cat" id="catsel"></select></div></div><label>شرح کامل گزارش</label><textarea name="body" rows="5" required></textarea><label>تصاویر (چند تصویر)</label><input name="imgs" type="file" accept="image/jpeg,image/png,image/webp" multiple><div class="two"><div><label>وضعیت انتشار</label><select name="st"><option value="draft">پیش‌نویس</option><option value="pub">منتشرشده</option></select></div></div><p><button class="btn">ذخیره</button> <button type="button" class="btn o" onclick="resetNF()">انصراف</button></p></form></div>
+<div class="panel"><input id="nq" placeholder="جست‌وجو در اخبار..." oninput="listNews()"><div id="nl"></div></div></div>
+<div id="t-chief" class="hide panel"><h3>مشخصات رئیس اداره</h3><form id="cf"><label>نام و نام خانوادگی</label><input name="name" required><label>سمت</label><input name="title" required><label>سوابق و متن معرفی</label><textarea name="bio" rows="4"></textarea><label>تصویر (برای تغییر، فایل جدید انتخاب کنید)</label><input name="img" type="file" accept="image/jpeg,image/png,image/webp"><p><button class="btn">ذخیره</button> <button type="button" class="btn d" onclick="delImg()">حذف تصویر</button></p></form></div>
+<div id="t-inbox" class="hide panel"><input id="rq" placeholder="جست‌وجو در پیام‌ها (نام، کد، متن)..." oninput="listReq()"><div id="rl"></div></div>
+<div id="t-contact" class="hide panel"><h3>اطلاعات تماس و اطلاعیه‌ها</h3><form id="kf"><label>نشانی</label><input name="addr"><div class="two"><div><label>تلفن</label><input name="tel"></div><div><label>ایمیل</label><input name="mail" type="email"></div></div><label>اطلاعیه جاری (هر خط یک اطلاعیه)</label><textarea name="anns" rows="3"></textarea><p><button class="btn">ذخیره</button></p></form></div>
+</div></div></section></main>
+
+<footer><div class="w">اداره اوقاف و امور خیریه شهرستان قشم · این صفحه نسخه نمایشی است و داده‌ها فقط در مرورگر همین دستگاه ذخیره می‌شوند.</div></footer>
+<dialog id="dlg"></dialog>
+<script>
+const CATS=["اخبار اداره","فعالیت‌های فرهنگی و قرآنی","بقاع متبرکه و امامزادگان","امور موقوفات","امور خیریه و کمک‌های مردمی","مناسبت‌های مذهبی","گزارش مراسم‌ها","اطلاعیه‌ها و فراخوان‌ها"];
+const ST=["ثبت‌شده","در حال بررسی","تکمیل‌شده"];
+const $=s=>document.querySelector(s);
+const E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fa=d=>{try{return new Date(d).toLocaleDateString("fa-IR")}catch(e){return d}};
+let db,mem=null;
+const seed=()=>({chief:{name:"حجت‌الاسلام والمسلمین دکتر روح‌الله صفری",title:"رئیس اداره اوقاف و امور خیریه شهرستان قشم",bio:"متن معرفی و سوابق از پنل مدیریت قابل ویرایش است.",img:""},
+contact:{addr:"قشم، (نشانی را از پنل مدیریت وارد کنید)",tel:"",mail:"",anns:"نمونه اطلاعیه: متن اطلاعیه‌ها را از پنل مدیریت ویرایش کنید."},
+news:[{id:1,title:"نمونه: نشست هماهنگی امور موقوفات",date:"2026-10-01",place:"قشم",unit:"واحد موقوفات",cat:CATS[3],body:"این خبر نمونه است. آن را ویرایش یا حذف کنید.",imgs:[],st:"pub"},{id:2,title:"نمونه: برنامه قرآنی هفتگی",date:"2026-10-05",place:"قشم",unit:"واحد فرهنگی",cat:CATS[1],body:"این گزارش نمونه است.",imgs:[],st:"pub"}],reqs:[]});
+function load(){try{db=JSON.parse(localStorage.getItem("qsm")||"null")}catch(e){db=mem}db=db||seed()}
+function save(){mem=db;try{localStorage.setItem("qsm",JSON.stringify(db))}catch(e){alert("فضای ذخیره‌سازی پر است؛ از تصاویر کم‌حجم‌تر استفاده کنید.")}}
+function img(f,max=900){return new Promise(r=>{const rd=new FileReader();rd.onload=()=>{const i=new Image();i.onload=()=>{const k=Math.min(1,max/Math.max(i.width,i.height)),c=document.createElement("canvas");c.width=i.width*k;c.height=i.height*k;c.getContext("2d").drawImage(i,0,0,c.width,c.height);r(c.toDataURL("image/jpeg",.75))};i.src=rd.result};rd.readAsDataURL(f)})}
+let view="home",cat="",admin=false,editId=null;
+function go(v){view=v;["home","citizen","admin"].forEach(x=>$("#v-"+x).classList.toggle("hide",x!==v));if(v==="admin")adm();scrollTo(0,0);render()}
+function render(){const c=db.chief;$("#cname").textContent=c.name;$("#ctitle").textContent=c.title;$("#cbio").textContent=c.bio;const p=$("#cph");p.style.backgroundImage=c.img?`url(${c.img})`:"";p.textContent=c.img?"":"☪";
+$("#anns").innerHTML=db.contact.anns.split("\n").filter(Boolean).map(a=>`<div class="li">${E(a)}</div>`).join("");
+$("#cats").innerHTML=["",...CATS].map(x=>`<button class="btn s ${x===cat?"on":""}" data-c="${E(x)}">${x||"همه"}</button>`).join("");
+$("#cats").onclick=e=>{if(e.target.dataset.c!==undefined){cat=e.target.dataset.c;render()}};
+const n=db.news.filter(x=>x.st==="pub"&&(!cat||x.cat===cat)).sort((a,b)=>b.date.localeCompare(a.date));
+$("#news").innerHTML=n.length?n.map(x=>`<article class="card"><div class="im" style="${x.imgs[0]?`background-image:url(${x.imgs[0]})`:""}">${x.imgs[0]?"":"✦"}</div><div class="b"><span class="chip">${E(x.cat)}</span><h3>${E(x.title)}</h3><div class="meta">${fa(x.date)}</div><p><button class="btn s" onclick="detail(${x.id})">مشاهده جزئیات</button></p></div></article>`).join(""):"<p>خبری در این دسته منتشر نشده است.</p>";
+const k=db.contact;$("#contact").innerHTML=`<p>نشانی: ${E(k.addr)}</p><p>تلفن: ${E(k.tel)||"—"}</p><p>ایمیل: ${E(k.mail)||"—"}</p>`}
+function detail(id){const x=db.news.find(n=>n.id===id);$("#dlg").innerHTML=`<h2>${E(x.title)}</h2><div class="meta">${fa(x.date)} — ${E(x.place)} — ${E(x.unit)}</div><p style="white-space:pre-wrap">${E(x.body)}</p>${x.imgs.map(i=>`<img src="${i}" alt="">`).join("")}<p><button class="btn" onclick="$('#dlg').close()">بستن</button></p>`;$("#dlg").showModal()}
+$("#rf").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target),code="QSM-"+(100000+Math.floor(Math.random()*900000));db.reqs.push({code,n:f.get("n"),p:f.get("p"),t:f.get("t"),m:f.get("m"),st:0,at:new Date().toISOString()});save();e.target.reset();$("#rcode").innerHTML=`<div class="note">درخواست ثبت شد. کد پیگیری شما: <b>${code}</b></div>`}
+$("#tf").onsubmit=e=>{e.preventDefault();const c=new FormData(e.target).get("c").trim().toUpperCase(),r=db.reqs.find(x=>x.code===c);$("#tres").innerHTML=r?`<div class="note">${E(r.t)} — وضعیت: <b>${ST[r.st]}</b></div>`:`<div class="note">کدی با این شماره پیدا نشد. کد را دوباره بررسی کنید.</div>`}
+function adm(){$("#login").classList.toggle("hide",admin);$("#dash").classList.toggle("hide",!admin);if(!admin)return;
+$("#catsel").innerHTML=CATS.map(c=>`<option>${c}</option>`).join("");
+const T={news:"اخبار و گزارش‌ها",chief:"رئیس اداره",inbox:"پیام‌ها و درخواست‌ها",contact:"تماس و اطلاعیه‌ها"};
+$("#tabs").innerHTML=Object.entries(T).map(([k,v])=>`<button class="btn s ${k==="news"?"on":""}" data-t="${k}">${v}</button>`).join("");
+$("#tabs").onclick=e=>{const t=e.target.dataset.t;if(!t)return;[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b.dataset.t===t));Object.keys(T).forEach(k=>$("#t-"+k).classList.toggle("hide",k!==t))};
+const c=db.chief,F=$("#cf");F.name.value=c.name;F.title.value=c.title;F.bio.value=c.bio;
+const K=$("#kf");K.addr.value=db.contact.addr;K.tel.value=db.contact.tel;K.mail.value=db.contact.mail;K.anns.value=db.contact.anns;
+stats();listNews();listReq()}
+function stats(){const d=db;$("#stats").innerHTML=`<div><b>${d.news.filter(x=>x.st==="pub").length}</b>خبر منتشرشده</div><div><b>${d.news.filter(x=>x.st==="draft").length}</b>پیش‌نویس</div><div><b>${d.reqs.length}</b>پیام دریافتی</div><div><b>${d.reqs.filter(x=>!x.st).length}</b>بدون بررسی</div>`}
+$("#lf").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);if(f.get("u")==="admin"&&f.get("p")==="admin123"){admin=true;$("#lerr").textContent="";adm()}else $("#lerr").textContent="نام کاربری یا رمز عبور درست نیست."}
+function logout(){admin=false;adm()}
+function listNews(){const q=$("#nq").value.trim();$("#nl").innerHTML=db.news.filter(x=>!q||x.title.includes(q)||x.cat.includes(q)).map(x=>`<div class="li"><span>${E(x.title)} <span class="chip">${x.st==="pub"?"منتشرشده":"پیش‌نویس"}</span></span><span><button class="btn s o" onclick="edit(${x.id})">ویرایش</button> <button class="btn s o" onclick="tog(${x.id})">${x.st==="pub"?"لغو انتشار":"انتشار"}</button> <button class="btn s d" onclick="del(${x.id})">حذف</button></span></div>`).join("")||"<p>موردی ثبت نشده است.</p>"}
+function edit(id){const x=db.news.find(n=>n.id===id),f=$("#nf");editId=id;["title","date","place","unit","cat","body","st"].forEach(k=>f[k].value=x[k]);$("#nft").textContent="ویرایش خبر";f.scrollIntoView()}
+function resetNF(){editId=null;$("#nf").reset();$("#nft").textContent="ثبت خبر یا گزارش"}
+function tog(id){const x=db.news.find(n=>n.id===id);x.st=x.st==="pub"?"draft":"pub";save();stats();listNews();render()}
+function del(id){if(confirm("این خبر حذف شود؟")){db.news=db.news.filter(n=>n.id!==id);save();stats();listNews();render()}}
+$("#nf").onsubmit=async e=>{e.preventDefault();const f=e.target,o={};["title","date","place","unit","cat","body","st"].forEach(k=>o[k]=f[k].value);
+const add=await Promise.all([...f.imgs.files].slice(0,6).map(x=>img(x)));
+if(editId){const x=db.news.find(n=>n.id===editId);Object.assign(x,o);if(add.length)x.imgs=add}else db.news.push({id:Date.now(),...o,imgs:add});
+save();resetNF();stats();listNews();render()}
+$("#cf").onsubmit=async e=>{e.preventDefault();const f=e.target;Object.assign(db.chief,{name:f.name.value,title:f.title.value,bio:f.bio.value});if(f.img.files[0])db.chief.img=await img(f.img.files[0],600);save();render();alert("ذخیره شد.")}
+function delImg(){db.chief.img="";save();render()}
+$("#kf").onsubmit=e=>{e.preventDefault();const f=e.target;Object.assign(db.contact,{addr:f.addr.value,tel:f.tel.value,mail:f.mail.value,anns:f.anns.value});save();render();alert("ذخیره شد.")}
+function listReq(){const q=$("#rq").value.trim();$("#rl").innerHTML=db.reqs.filter(r=>!q||(r.n+r.code+r.m).includes(q)).reverse().map(r=>`<div class="li"><span><b>${E(r.code)}</b> — ${E(r.n)} (${E(r.p)})<br><span class="meta">${E(r.t)}: ${E(r.m)}</span></span><select style="width:auto" onchange="setSt('${r.code}',this.value)">${ST.map((s,i)=>`<option value="${i}" ${i===r.st?"selected":""}>${s}</option>`).join("")}</select></div>`).join("")||"<p>پیامی دریافت نشده است.</p>"}
+function setSt(c,v){db.reqs.find(r=>r.code===c).st=+v;save();stats()}
+load();render();
+</script></body></html>
